@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Home</title>
+
+  <!-- Estilos -->
+   <!-- FullPage.js CSS -->
+   <script src="i18n.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.24/fullpage.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+  <!-- Tipografía opcional -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- FullPage.js si decides usarlo -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" /> -->
+
+  <!-- Favicon opcional -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <!-- Menú hamburguesa -->
+        <div class="nav-center">
+          <button id="menuToggle"><span class="iconmen">☰</span></button>
+           <!-- Display current section name -->
+    <div class="current-section data-i18n">
+      <span id="currentSectionName" >Home</span>
+  </div>
+          <ul id="menu" class="hidden " >
+            <li><a href="#home" >Home</a></li>
+            <li><a href="#meetme" data-i18n="meetMe">Meet me</a></li>
+            <li><a href="#proyects" data-i18n="projects">Projects</a></li>
+            <li><a href="#proyectos" data-i18n="moreProjects">More Projects</a></li>
+            <li><a href="#contact" data-i18n="contact">Contact</a></li>
+          </ul>
+        </div>
+     
+        <!-- Toggle + idioma -->
+        <div class="nav-right">
+          <label class="theme-toggle">
+            <input type="checkbox" id="themeSwitcher" />
+            <span class="slider">
+              <span class="moon">🌕</span>
+              <span class="sun">🌕</span>
+            </span>
+          </label>
+      
+          <div class="language-switcher">
+            <span class="lang active" data-lang="en" data-i18n="english">English</span> / 
+            <span class="lang" data-lang="es" data-i18n="spanish">Spanish</span>
+          </div>
+          
+        </div>
+        <img id="squareLogo" src="images/log-light.svg" alt="Logo" class="square-logo" />
+        
+      </nav>
+      <!--sections-->
+  
+      <div id="fullpage">
+        <section class="section" id="home"> 
+          <div class="home-content">
+            <img id="homfo" src="images/logo-home-light.svg" alt="Main Banner" class="home-image"/>
+            <nav class="home-nav">
+              <a href="#home" class="h-c" data-i18n="home">Home</a>
+              <a href="#meetme" class="h-c" data-i18n="meetMe">Meet Me</a>
+              <a href="#proyects" class="h-c" data-i18n="projects">Projects</a>
+              <a href="#proyectos" class="h-c" data-i18n="moreProjects">More Projects</a>
+              <a href="#contact" class="h-c" data-i18n="contact">Contact</a>
+            </nav>
+          </div>
+        
+        </section>
+        <section class="section" id="meetme">
+          
+            <div class="meetme-inner">
+              <div class="content-left">
+                <h1 data-i18n="whoIs">
+                  Who is<br>
+                  Trina Susaña
+                </h1>
+                <p data-i18n="introText">
+                  I am a UI/UX Designer and Front-End Dev with a foundation in design and development tools such as Figma, WordPress, Webflow, HTML, CSS, and React. My journey has taken me through diverse roles, ranging from freelance projects to positions within companies, including serving as a PM. My experience has honed both my technical expertise and leadership abilities.
+                  <br/>Born on February 21, 1995, in Santo Domingo, Dominican Republic, I pursued higher education at UNAPEC, a university renowned for fostering talent. My bilingual fluency has been an asset in connecting with a variety of clients and collaborators. 
+</p>
+<div class="skills-container">
+  <!-- Soft Skills -->
+  <p class="skills soft-skills">
+    <span class="skill-bubble soft" data-i18n="problemSolving">Problem-solving</span>
+    <span class="skill-bubble soft" data-i18n="effectiveCommunication">Effective Communication</span>
+    <span class="skill-bubble soft" data-i18n="adaptability">Adaptability</span>
+    <span class="skill-bubble soft" data-i18n="leadership">Leader</span>
+    <span class="skill-bubble soft" data-i18n="creativeThinking">Creative Thinking</span>
+  </p>
+  <!-- Hard Skills -->
+  <p class="skills hard-skills">
+    <span class="skill-bubble hard" data-i18n="design">Design</span>
+    <span class="skill-bubble hard" data-i18n="coding">Coding</span>
+    <span class="skill-bubble hard" data-i18n="projectManagement">Project Management</span>
+    <span class="skill-bubble hard" data-i18n="ux">UX</span>
+  </p>
+</div>
+                <a href="#portfolio" class="see-work-link" data-i18n="myWorksee" >See my work</a>
+              </div>
+              <div class="content-right">
+                <img src="images/myself1.jpg" alt="About me" />
+              </div>
+            </div>
+         </section>
+        <section class="section" id="proyects"> 
+
+          <div class="third-section">
+            <!-- First line: Title aligned to the left -->
+            <h2 class="section-title" data-i18n="somWo">Some of my Work</h2>
+          
+            <!-- Second and Third line: 3 columns on each line -->
+  <div class="columns">
+    <!-- First row of 3 columns -->
+    <div class="column">
+      <img src="images/codemera.jpg" alt="Photo 1" class="photo">
+      <h3 class="column-title">Codemera</h3>
+      <p class="small-text" data-i18n="codemeraText">I worked at this company, where I created a fully functional website.</p>
+      <a href="https://www.codemera.com/" class="link" target="_blank" data-i18n="visitSite">Visit Site</a>
+    </div>
+    <div class="column">
+      <img src="images/efmex.jpg" alt="Photo 2" class="photo">
+      <h3 class="column-title">Eficiencia Energetica Mexico</h3>
+      <p class="small-text" data-i18n="eficienciaText">Small business in Mexico contacted me to create a full website.</p>
+      <a href="https://eficienciaenergeticamexico.com/" class="link" target="_blank" data-i18n="visitSite">Visit Site</a>
+    </div>
+    <div class="column">
+      <img src="images/skyboss.jpg" alt="Photo 3" class="photo">
+      <h3 class="column-title">Skyboss.io</h3>
+      <p class="small-text" data-i18n="skybossText">Tech group in the Czech Republic requested a website to capture clients.</p>
+      <a href="https://skyboss.io/" class="link" target="_blank" data-i18n="visitSite">Visit Site</a>
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- Second row of 3 columns -->
+    <div class="column">
+      <img src="images/mall.jpg" alt="Photo 4" class="photo">
+      <h3 class="column-title">Mallen Mascotas</h3>
+      <p class="small-text" data-i18n="mallenText"> Project created to help find the perfect food for pets petfriendly places in DR.</p>
+      <a href="https://mallenmascotas.com/" class="link" target="_blank" data-i18n="visitSite">Visit Site</a>
+    </div>
+    <div class="column">
+      <img src="images/climed.jpg"Photo 5" class="photo">
+      <h3 class="column-title">Clinica Medina</h3>
+      <p class="small-text" data-i18n="clinicaText">Website for a dental clinic in spain, showcasing their clinic, work and collaborators.</p>
+      <a href="https://clinicamedina.com/" class="link" target="_blank" data-i18n="visitSite">Visit Site</a>
+    </div>
+    <div class="column">
+      <img src="images/cacao.jpg" alt="Photo 6" class="photo">
+      <h3 class="column-title">Cacao Mae</h3>
+      <p class="small-text" data-i18n="cacaoText">Business that sells cacao, e-commerce website that showcases the product and has a store.</p>
+      <a href="https://cacaomae.com/en/home/sustainability/" class="link" target="_blank" data-i18n="visitSite">Visit Site</a>
+    </div>
+  </div>
+          </div>
+          
+        
+        </section>
+        <section class="section" id="proyectos"> 
+          
+          <div class="third-section">
+            <!-- First line: Title aligned to the left -->
+            <h2 class="section-title">More Projects</h2>
+          
+            <!-- Second and Third line: 3 columns on each line -->
+  <div class="columns">
+    <!-- First row of 3 columns -->
+    <div class="column">
+      <img src="images/learnen.jpg" alt="Photo 1" class="photo">
+      <h3 class="column-title">Learn2engage</h3>
+      <p class="small-text" data-i18n="learnTo">Maintaining your WordPress site, Learn2Engage, is crucial to ensuring its functionality, security, and user experience. Regular updates to themes, plugins, and the core WordPress platform can prevent vulnerabilities and enhance performance. 
+        Backing up the site frequently safeguards your data against unexpected issues. Monitoring site traffic and performance metrics allows for timely optimizations and improvements. </p>
+        <a href="https://learn2engage.info/" class="link" target="_blank" data-i18n="visitSite">Visit Site</a>
+    </div>
+    <div class="column">
+      <img src="images/iglesia.jpg" alt="Photo 2" class="photo">
+      <h3 class="column-title">Iglesia Doméstica</h3>
+      <p class="small-text" data-i18n="IglDom">For Iglesia Doméstica, I designed and developed the entire website, all sections were thoughtfully organized to meet their needs. 
+        Is not only visually appealing but also functional, including a feature that allows users to make donations seamlessly.</p>
+      <a href="https://www.iglesiadomestica.com.do/" class="link" target="_blank" data-i18n="visitSite">Visit Site</a>
+    </div>
+    <div class="column">
+      <img src="images/impulsa.jpg" alt="Photo 3" class="photo">
+      <h3 class="column-title">Impulsa Capital</h3>
+      <p class="small-text" data-i18n="impulsaCapital">I played a key role in the development of various functionalities for this site, enhancing its overall structure and user experience. Through implementation and optimization, I introduced crucial updates and improvements to ensure the platform operates efficiently. I worked on refining key aspects of the site to prepare it for a seamless transition into production, guaranteeing stability and performance for its users.</p>
+      <a href="https://www.impulsacapital.do//" class="link" target="_blank" data-i18n="visitSite">Visit Site</a>
+    </div>
+  </div>
+          
+         </section>
+        <section class="section" id="contact"> 
+          <div class="top-bar">
+            <p class="con-cl">
+              <i class="fas fa-envelope" data-i18n="email" ></i> 
+              <a href="mailto:trinagsn@gmail.com">trinagsn@gmail.com</a>
+            </p>
+            <p class="con-cl">
+              <i class="fas fa-phone-alt" data-i18n="phone"></i>  +1 829-480-3740
+            </p>
+          </div>
+      
+          <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank">
+              <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <div class="icon"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="https://www.behance.net/Trinaguillen" target="_blank">
+              <div class="icon"><i class="fab fa-behance"></i></div>
+            </a>
+          </div>
+
+          
+      
+          <h2 data-i18n="conTit">Let's Talk</h2>
+          <p class="description" data-i18n="description">
+            You can text me over email or Whatsapp at anytime, usually respond between<br / data-i18n="descriptionTwo">
+            7:00 AM and 6:00 PM
+           <br> <button class="cta-button" data-i18n="button">Contact me!</button>
+          </p>
+      
+          
+      
+          <hr class="divider"/>
+      
+          <form class="contact-form"  action="https://formspree.io/f/xblgwrgv" method="POST">
+            <input type="hidden" name="_subject" value="New message from your website">
+          
+            <div class="row">
+              <input type="text" name="nombre" placeholder="Name*" required />
+              <input type="text" name="apellido" placeholder="Last Name" />
+            </div>
+          
+            <div class="row">
+              <input type="email" name="email" placeholder="Email*" required />
+              <input type="tel" name="telefono" placeholder="Number" />
+            </div>
+          
+            <textarea name="mensaje" placeholder="Message..." rows="5"></textarea>
+          
+            <button type="submit" class="submit-button" data-i18n="send">Send</button>
+            <p id="success-message" class="sccs" data-i18n="thanks">Thanks! Your message has been sent.</p>
+          </form>
+        </section>
+
+        <div class="section animated-gradient" id="footer">
+  <div class="footer-content">
+    <p class="foot-txt" data-i18n="copyRight">© 2025 Trina | Built with my own hands</p>
+    <p><a class="foot-txtt" href="mailto:trinagsn@gmail.com" data-i18n="last">Contact me</a></p>
+  </div>
+</div>
+      
+        
+      </div>
+
+      
+      <script src="form.handler.js"></script>
+  </body>
+  <script src="script.js"></script>
+  <script src="lang.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.24/fullpage.min.js"></script>
+</html>
+
