@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!isMobile) {
       fullpageInstance = new fullpage('#fullpage', {
         autoScrolling: true,
-        fitToSection: true,
+        fitToSection: false,
         scrollBar: false,
         scrollOverflow: false,
         navigation: true,

@@ -311,13 +311,13 @@ body:not(.dark-mode) #homfo{
 /*MEET ME*/
 
 
-#meetme .meetme-inner {
+#meetme-1 .meetme-inner {
   max-height: 80vh;
   overflow: hidden;
 }
 
 
-#meetme .meetme-inner {
+#meetme-1 .meetme-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -579,7 +579,7 @@ p.skills.soft-skills {
 }
 .fa, .fas {
     font-weight: 600;
-    padding: 5px;
+    padding: 6px 12px;
     font-family: 'Poppins';
   color: #4ECDC4;}
 
