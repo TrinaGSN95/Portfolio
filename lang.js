@@ -63,11 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'moreProjects': 'Más Proyectos',
             'contact': 'Contacto',
             'whoIs': '¿Quién es Trina Susaña?',
-            'intro': 'Soy Diseñadora UI/UX y Desarrolladora Front-End con una base sólida en herramientas de diseño y desarrollo como Figma, WordPress, Webflow, HTML, CSS y React. Mi trayectoria me ha llevado a desempeñar roles diversos, desde proyectos freelance hasta posiciones dentro de empresas, incluyendo funciones como Project Manager. Esta experiencia ha fortalecido tanto mis habilidades técnicas como mi capacidad de liderazgo.Nací el 21 de febrero de 1995 en Santo Domingo, República Dominicana, y cursé estudios superiores en la UNAPEC, una universidad reconocida por fomentar el talento. Mi fluidez bilingüe ha sido una ventaja para conectar con una variedad de clientes y colaboradores',
+            'introText': 'Soy Diseñadora UI/UX y Desarrolladora Front-End con una base sólida en herramientas de diseño y desarrollo como Figma, WordPress, Webflow, HTML, CSS y React. Mi trayectoria me ha llevado a desempeñar roles diversos, desde proyectos freelance hasta posiciones dentro de empresas, incluyendo funciones como Project Manager. Esta experiencia ha fortalecido tanto mis habilidades técnicas como mi capacidad de liderazgo.Nací el 21 de febrero de 1995 en Santo Domingo, República Dominicana, y cursé estudios superiores en la UNAPEC, una universidad reconocida por fomentar el talento. Mi fluidez bilingüe ha sido una ventaja para conectar con una variedad de clientes y colaboradores',
             'bioText': 'Nací el 21 de febrero de 1995 en Santo Domingo, República Dominicana, y estudié en la UNAPEC, una universidad reconocida por fomentar el talento...',
             'softSkills': 'Habilidades Blandas:',
             'hardSkills': 'Habilidades Técnicas:',
-            'seeMyWork': 'Ver mi trabajo',
+            'myWorksee': 'Ver mi trabajo',
             'someOfMyWork': 'Algunos de mis trabajos',
             'projectsList': ['Codemera', 'Eficiencia Energética México', 'Skyboss.io', 'Mallen Mascotas', 'Clínica Medina', 'Cacao Mae'],
             'contactEmail': 'correo: trinagsn@gmail.com',
@@ -106,9 +106,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Add more translations here as needed...
         }
     };
-
+function switchLanguage(lang) {
+    AppLang.setLang(lang); 
     // Function to switch language
-    function switchLanguage(lang) {
+   //function switchLanguage(lang) {
         // Change the lang attribute on <html> tag
         document.documentElement.lang = lang;
 

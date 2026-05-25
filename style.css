@@ -1,6 +1,12 @@
 * {
     box-sizing: border-box;
+   
   }
+  *:not(.fa):not(.fas):not(.far):not(.fab){
+    font-family: 'Poppins', sans-serif; 
+
+  }
+
   
   body {
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -18,7 +24,16 @@
   #fp-nav.fp-left {
     left: 33px;
 }
-  
+ 
+.fa, .fas, .far, .fab, .fad, .fal {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+.fab {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400 !important;
+}
   .navbar {
     font-family:"Poppins", sans-serif;
     display: flex;
@@ -266,7 +281,7 @@ body.dark-mode #menuToggle{
 /* Initially, hide the logo */
 .square-logo {
   display: none; /* Hidden initially */
-  transition: opacity 0.8s ease-in-out; 
+  transition: opacity 0.10s ease-in-out; 
 
   
 }
@@ -274,7 +289,7 @@ body.dark-mode #menuToggle{
 /* Show the logo when the 'show-logo' class is added */
 .show-logo {
   opacity:1;
-  transition: opacity 0.8s ease-in-out; 
+  transition: opacity 0.12s ease-in-out; 
   width:36px;
   padding-left:12px;
   display: inline-block; /* This makes the logo visible when class is applied */

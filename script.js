@@ -79,6 +79,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   setupLayout();
 
+  window.addEventListener("AppLangChanged", (e) => {
+  const lang = e.detail;
+  const anchor = window.currentAnchor;
+
+  if (anchor && anchor !== "home") {
+    const names = window.AppLang?.sectionNames?.[anchor];
+    if (names?.[lang]) {
+      currentSectionName.textContent = names[lang];
+    }
+  }
+});
+
   window.addEventListener('resize', () => {
     clearTimeout(this.resizeTimeout);
     this.resizeTimeout = setTimeout(() => {
